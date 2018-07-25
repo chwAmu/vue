@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hello world!</title>
+</head>
+<body>
+	
+	<!-- first app -->
+	<div id="app">
+		{{ message }}
+	</div>
+	
+	<!-- load the system time -->
+	<div id="app2">
+		<span v-bind:title="message">
+			Please Hover here!
+		</span>
+	</div>
+
+	<!-- using if  -->
+	<div id="app3">
+		<span v-if="seen">now you can see me.</span>
+	</div>
+
+	<!-- using for loop -->
+	<div id="app4">
+		<ol>
+			<li v-for="user in users">
+				{{user.text}}
+			</li>x
+		</ol>
+	</div>
+
+	<!-- user input control -->
+	<div id="app5">
+		<p>{{message}}</p>
+		<button v-on:click="reverseMessage">Some Message is reversed..</button>
+	</div>
+
+
+
+	<!-- 本番バージョン、サイズと速度のために最適化されています -->
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	
+	<!-- 開発バージョン、便利なコンソールの警告が含まれています -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+
+	<script type="text/javascript"></script>
+	<script src="script.js"></script>
+
+</body>
+</html>
