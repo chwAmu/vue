@@ -27,7 +27,7 @@
 		<ol>
 			<li v-for="user in users">
 				{{user.text}}
-			</li>x
+			</li>
 		</ol>
 	</div>
 
@@ -36,7 +36,14 @@
 		<p>{{message}}</p>
 		<button v-on:click="reverseMessage">Some Message is reversed..</button>
 	</div>
+	
 
+	<!-- input -->
+
+	<div id="app6">
+		<p>{{message}}</p>
+		<input v-model="message">
+	</div>
 
 
 	<!-- 本番バージョン、サイズと速度のために最適化されています -->

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hello world!</title>
+</head>
+<body>
+	
+	<span id='sp1'>message:{{message}} {{ message.split('').reverse().join('')}}</span>
+	<span id='sp2' v-once>message never change:{{message}}</span>
+
+	<p id='p1'>Using mustaches:{{raw_html}} && Using v-html:<span v-html="raw_html"></span></p>
+
+
+
+	<!-- 本番バージョン、サイズと速度のために最適化されています -->
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	
+	<!-- 開発バージョン、便利なコンソールの警告が含まれています -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+
+	<script type="text/javascript"></script>
+	<script src="script.js"></script>
+
+</body>
+</html>

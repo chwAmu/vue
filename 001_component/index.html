@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hello world!</title>
+</head>
+<body>
+	
+	<div id='app7'>
+		<ol>
+			<todo-item v-for="item in groceryList" v-bind:todo="item"></todo-item>
+		</ol>
+	</div>
+
+	<div id='tagTable'>
+		<ol>
+			<taglist v-for="tag in tags" v-bind:tagname="tag"></taglist>
+		</ol>
+
+	</div>
+
+	<!-- 本番バージョン、サイズと速度のために最適化されています -->
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	
+	<!-- 開発バージョン、便利なコンソールの警告が含まれています -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+
+	<script type="text/javascript"></script>
+	<script src="script.js"></script>
+
+</body>
+</html>
